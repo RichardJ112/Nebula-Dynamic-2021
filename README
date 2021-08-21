@@ -1,6 +1,7 @@
 # Nebula Dynamic 2021
 
-This is a fork of the Nebula Monte Carlo simulator for electron-matter interaction created by Luc van Kessel of the TU Delft
+This is a fork of the EBID simualtor Nebula Dynamic created by Jonathan Dingemanse which itself 
+is based on the Monte Carlo electron-matter interaction scatterer created by Luc van Kessel of the TU Delft
 
 Original Nebula Documentation can be found here:
 https://nebula-simulator.github.io/cstool-install/
