@@ -1,0 +1,5 @@
+*.bin
+*.p
+*.det
+*.png
+nebula_vsc/.vscode/

@@ -1,0 +1,25 @@
+name:              tungsten
+density:           19.3 g/cm³
+
+elements:
+    W: { count: 1, Z: 74, M: 183.84 g/mol }
+
+band_structure:
+    model:         metal
+    fermi:         10 eV
+    work_function: 4.55 eV
+
+optical:
+    df_file:       elf/df_W.dat
+
+phonon:
+    lattice:       3.1648 Å
+
+    isotropic:
+        resistivity: 5.28e-8 Ω m
+
+    longitudinal:
+        c_s:       5220 m/s
+
+    transversal:
+        c_s:       2640 m/s
