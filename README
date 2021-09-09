@@ -11,12 +11,9 @@ Look to this documentation for the creation of HDF5 material files with YAML tex
 There are two folders inside this distribution. 
 
 nebula_vsc contains the actual simulator and source code which can be compiled by using
-the build_nebula_vsc.sh bash script in a linux terminal. To use the simulator add the executable to your PATH. After this you can use 
-the desktop_run_alt.sh and desktop_multirun_alt.sh files to run simulations using the command line. Note that you will need to edit these
-to properly add the paths to your input parameters.
+the build_nebula_vsc.sh bash script in a linux terminal. To use the simulator add the executable to your PATH. After this you can use the desktop_run_alt.sh and desktop_multirun_alt.sh files to run simulations using the command line. Note that you will need to edit these to properly add the paths to your input parameters.
 
-nebula_test_files contains a folder for the creation,filing and analysis of simulator output through a series of python scripts. In vox_tri_pri 
-you can find python scripts for the creation of electron files for various geometries and different geometries.In the broader file folder output analysis
+nebula_test_files contains a folder for the creation,filing and analysis of simulator output through a series of python scripts. In vox_tri_pri you can find python scripts for the creation of electron files for various geometries and different geometries.In the broader file folder output analysis
 files can be found. 
 
 To change some parameters inside the simulator changes should be made to 3 files:
