@@ -30,9 +30,9 @@ from matplotlib.colors import ListedColormap, LinearSegmentedColormap
 
 
 # IO parameters
-date = "/August/30_8_2021/"
+date = "/October/28_10_2021/"
 deposit_type = 'point'#types supported are line and point
-material = 'tungsten'
+material = 'silicon'
 cross_section_type = '_SM_'
 HPC_toggle = False #Set to true when running on HPC
 direct_pathing = False #allow for direct input of file through command line
@@ -45,11 +45,11 @@ source = 'walls'
 extra_plots = True
 f_range = 20#fixed range in nm
 
-#output_extra_str = ""
-output_extra_str = "_e17_em10_mb"
+output_extra_str = ""
+#output_extra_str = "_e19_em9_bd"
 
 
-parameter_summary = "1keV_1_400kpp_pitch_0_161_161_1001_sb_1000_vs_357_sd_34000_sh_996_detect_dome_mirror_vs_357_"
+parameter_summary = "1keV_1_10kpp_pitch_0_401_401_1001_sb_1000_vs_300_sd_34000_sh_996_detect_dome_vs_300_"
 #parameter_summary = "5keV_21_10kpp_pitch_1000_401_401_601_sb_1000_sd_10000_"
 #parameter_summary = "1keV_1_0-31kpp_pitch_0_57_57_101_sb_1000_vs_357_sd_34000_sh_96_detect_dome_vs_357_" # 2D diffusion wall
 #parameter_summary = "1keV_1_0-193kpp_pitch_0_113_113_101_sb_1000_vs_357_sd_34000_sh_96_detect_dome_vs_357_" # 2D diffusion point
@@ -66,7 +66,7 @@ if HPC_toggle: #Adjustments for HPC environment
     #HPC path
     path_to_test_files = "/home/richarddejong/nebula_test_files/"
 elif desktop_toggle:
-    path_to_test_files = "C:/Users/Richard/source/repos/Nebula/nebula_test_files/"
+    path_to_test_files = "C:/Users/Richard/source/repos/Nebula/nebula_dynamic_2021/nebula_test_files/"
 else: 
     # Laptop path
     path_to_test_files= "C:/Users/richa/Documents/repos/nebula_test_files/"

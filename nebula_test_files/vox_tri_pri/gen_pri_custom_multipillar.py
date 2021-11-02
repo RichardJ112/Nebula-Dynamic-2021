@@ -10,12 +10,12 @@ HPC_toggle = False
 multi_run_folder_toggle = False # single or multi folder (True is multi,False is single)
 desktop_toggle = True
 
-date = "/2_9_2021/"
+date = "/28_10_2021/"
 
 # Parameters Geom
 voxel_size = 0.3; # voxel size in nanometers (0.27 nm is appr. one atom of Si)(Smith uses 0.25nm for Tungsten(W))(0.96 silicon movement)
-size_x= 251 # horizontal size in the x direction in voxels (now for +/- x)
-size_y = 251 # horizontal size in the y direction in voxels (now for +/- y)
+size_x= 401 # horizontal size in the x direction in voxels (now for +/- x)
+size_y = 401 # horizontal size in the y direction in voxels (now for +/- y)
 size_z = 1001 # vertical size in voxels
 volume = size_x*size_y*size_z # total voxel volume
 voxel_size_pm = int(voxel_size*1000)
@@ -26,7 +26,7 @@ numrange = np.linspace(-(num-1)/2,(num-1)/2,num)
 x = size_x*voxel_size/2       # starting x
 y = size_y*voxel_size/2        # starting y
 z = 1      # starting z in nm
-N = int(200e3)    # Number of electrons per pillar
+N = int(10e3)    # Number of electrons per pillar
 energy = int(1e3) # Beam energy, in eV
 sigma_beam = 1 # Beam standard deviation in nm
 sigma_beam_pm = round(sigma_beam*1000) # Beam standard deviation in pm
@@ -73,13 +73,13 @@ for i in range(total_runs):
 		inputy[j*N:N*(j+1)] = y_p[j]
 
 	# Open file
-
+	
 	if multi_run_folder_toggle:
 		#Multi-Runs - Run all files in folder (for multi-runs exectuable)
 		if HPC_toggle:
 			file_path = "/home/richarddejong/nebula_test_files/vox_tri_pri/multi_runs"+date 
 		elif desktop_toggle:
-			file_path = "C:/Users/Richard/source/repos/Nebula/nebula_test_files/vox_tri_pri/multi_runs"+date
+			file_path = "C:/Users/Richard/source/repos/Nebula/nebula_dynamic_2021/nebula_test_files/vox_tri_pri/multi_runs"+date
 		else:
 			file_path = "C:/Users/richa/Documents/repos/nebula_test_files/vox_tri_pri/multi_runs"+date
 	else:
@@ -87,7 +87,7 @@ for i in range(total_runs):
 		if HPC_toggle:
 			file_path = "/home/richarddejong/nebula_test_files/vox_tri_pri/single_runs"+date 
 		elif desktop_toggle:
-			file_path = "C:/Users/Richard/source/repos/Nebula/nebula_test_files/vox_tri_pri/single_runs"+date
+			file_path = "C:/Users/Richard/source/repos/Nebula/nebula_dynamic_2021/nebula_test_files/vox_tri_pri/single_runs"+date
 		else:
 			file_path = "C:/Users/richa/Documents/repos/nebula_test_files/vox_tri_pri/single_runs"+date
 

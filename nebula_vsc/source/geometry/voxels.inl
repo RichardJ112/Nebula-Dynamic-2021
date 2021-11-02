@@ -93,7 +93,7 @@ inline voxels<gpu_flag>::voxels(real voxel_size, vec3 shape, std::vector<int> in
 
 	//Adsorpotion and Surface Diffusion Variables (Should be ported to options and condensed)
 	//real _diffusion_constant = 6.0667e-8; //surface diffusion consant [cm]2 [s]-1
-	real _diffusion_constant =  1e-7; //surface diffusion consant [cm]2 [s]-1
+	real _diffusion_constant =  1e-9; //surface diffusion consant [cm]2 [s]-1
 	real beam_current = 100e-12; //beam current  [A]
 	real particle_charge = 1.602e-19; //charge of electron  [C]
 	_particles_between_gas_routines = 1; //amount of electrons between gas handling routines
@@ -114,7 +114,7 @@ inline voxels<gpu_flag>::voxels(real voxel_size, vec3 shape, std::vector<int> in
 	int initial_surface_layer_size = _size_x*_size_y;
 	
 	// Gas Handling 
-	_adsorption = false; //toggles adsorption on/off
+	_adsorption = true; //toggles adsorption on/off
 	_desorption = false; //remove this for performance when comparing to Smith et al. --> mean residence time =1s super high (1 million electrons ~ 0.0053s at 30pA)
 	_surface_diffusion = true; //toggles surface diffusion on/off
 	bool monolayer_toggle = false; //toggle between initial monolayer and no intitial monolayer

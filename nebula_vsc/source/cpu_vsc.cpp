@@ -214,7 +214,7 @@ int main(int argc, char** argv)
 	}
 	// This document string is for WSL laptop --> change to your own output directory (document_str --> empty str will disable this function)
 	//std::string document_str = "/mnt/c/Users/richa/Documents/repos/nebula_test_files/output/"+month_name+"/"+date_string+"/";
-	std::string document_str = "/mnt/c/Users/Richard/source/repos/Nebula/nebula_test_files/output/"+month_name+"/"+date_string+"/";	//This is for personal WSL Desktop
+	std::string document_str = "/mnt/c/Users/Richard/source/repos/Nebula/nebula_dynamic_2021/nebula_test_files/output/"+month_name+"/"+date_string+"/";	//This is for personal WSL Desktop
 	//std::string document_str = "/home/richarddejong/nebula_test_files/output/"+month_name+"/"+date_string+"/"";	//This is for HPC Server
 
 	std::string CS_choice = "_SM_"; //cross section choice --> should be further integrated into run options/boundary intersect funtion, Still manual only for saving--> change physics_config too!

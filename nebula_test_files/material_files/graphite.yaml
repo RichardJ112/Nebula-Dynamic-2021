@@ -1,0 +1,21 @@
+name:           graphite
+density:        2.27 g/cm³
+
+elements:
+    C: { count: 1, Z: 6, M: 12.011 g/mol }
+
+band_structure:
+    model:      semiconductor
+    valence:    8.64 eV
+    band_gap:   0 eV
+    affinity:   4.6 eV
+
+optical:
+    df_file:    elf/df_Graphite.dat
+
+phonon:
+    lattice:    2.4 Å
+
+    isotropic:
+        c_s:    21 km/s
+        ac_def: 16 eV

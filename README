@@ -6,9 +6,10 @@ is based on the Monte Carlo electron-matter interaction scatterer created by Luc
 Original Nebula Documentation can be found here:
 https://nebula-simulator.github.io/
 
-Look to this documentation for the creation of HDF5 material files with YAML text files with CSTOOL via ELSEPA
+-Look to this documentation for the creation of HDF5 material files with YAML text files with CSTOOL via ELSEPA
 
-There are two folders inside this distribution. 
+As for this repository,
+There are two folders inside this distribution: 
 
 nebula_vsc contains the actual simulator and source code which can be compiled by using
 the build_nebula_vsc.sh bash script in a linux terminal. To use the simulator add the executable to your PATH. After this you can use 
@@ -16,8 +17,19 @@ the desktop_run_alt.sh and desktop_multirun_alt.sh files to run simulations usin
 to properly add the paths to your input parameters.
 
 nebula_test_files contains a folder for the creation,filing and analysis of simulator output through a series of python scripts. In vox_tri_pri 
-you can find python scripts for the creation of electron files for various geometries and different geometries.In the broader file folder output analysis
-files can be found. 
+you can find python scripts for the creation of electron files for various geometries. In the broader file folder output analysis
+files can be found. Note that it is necessary to change the paths to various folders/files inside these scripts to those that represent your own local file system.
+
+Note that a python 3 installation, preferably based on the anaconda distribution (https://www.anaconda.com/products/individual), will be needed to run the python scripts in
+nebula_test_files.
+
+If on a windows platform it is recommended to use the Windows Subsystem for Linux (WSL) and a supported code editor such as Visual Studio Code (VSC) https://code.visualstudio.com/.
+This is a resource link for getting started with this combination for windows: https://docs.microsoft.com/en-us/learn/modules/get-started-with-windows-subsystem-for-linux/.
+You will again need to make sure built executables are added to your path in the .bash_profile and .bashrc files in your linux distribution. These can be found in your installed
+linux distribution by typing in \\wsl$ in the windows search bar and navigating to your linux profile.
+
+The necessary command is as follows with your own path to nebula_dynamic_2021.
+export PATH=$PATH:/.../nebula_dynamic_2021/nebula_vsc/build/bin
 
 To change some parameters inside the simulator changes should be made to 3 files:
 
@@ -33,7 +45,7 @@ nebula_vsc/source/cpu_vsc.cpp
 
 Note that the simulator requires 2 materials for gas handling but you can just use the same material twice with a different name.
 
-Change CMakeLists.txt CMake build type to "Release" for increased speed
+Change CMakeLists.txt CMake build type to "Release" for increased speed and to "Debug" in order to allow for breakpoint debugging.
 
-September 2021
+Ocotber 2021
 Richard de Jong

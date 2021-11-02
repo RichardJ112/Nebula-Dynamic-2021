@@ -48,7 +48,7 @@ find_package(Threads REQUIRED)
 
 #Change to Debug for debugging
 if(NOT CMAKE_BUILD_TYPE)
-	SET(CMAKE_BUILD_TYPE "Debug" CACHE STRING
+	SET(CMAKE_BUILD_TYPE "Release" CACHE STRING
 		"Choose the type of build, options are: None Debug Release RelWithDebInfo MinSizeRel."
 		FORCE)
 endif()

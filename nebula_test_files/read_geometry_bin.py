@@ -18,22 +18,22 @@ from struct import *
 # This version removes any use of the old classifications / streamlines some aspects
 
 # IO parameters
-date = "/August/30_8_2021/"
+date = "/October/28_10_2021/"
 #date = "/July/10_7_2021/"
 #deposit_type = 'point'#types supported are line,diagonal,point,wall
 deposit_type = 'point'
-material = 'tungsten'
+material = 'silicon'
 #material = 'graphite-phonon'
 #cross_section_type = '_AWM_'
 #cross_section_type = '_SMC_'
-cross_section_type = '_SMC_'
+cross_section_type = '_SM_'
 HPC_toggle = False #Set to true when running on HPC
 direct_pathing = False #allow for direct input of file through command line
 desktop_toggle = True
 enable_e_grid = False
 gas_handling = True
 nm_check = 2
-f_range = 20#fixed range in nm for plotting section of full domain
+f_range = 10#fixed range in nm for plotting section of full domain
 f_width_auto = 0
 max_toggle = True
 
@@ -45,13 +45,13 @@ class_legend_toggle = False
 #gas_handling_str = "_e20_em9"
 #gas_handling_str = "_e18_em8_b"
 #gas_handling_str = ""
-gas_handling_str = "_e17_em9_mb"
+gas_handling_str = "_e19_em9_bd"
 
 #output_extra_str = ""
 output_extra_str = ""
 
 #parameter_summary ="1keV_1_10kpp_pitch_0_401_401_1001_sb_3000_vs_300_sd_34000_sh_996_detect_dome_mirror_vs_300_" #point small pillar
-parameter_summary = "1keV_1_500kpp_pitch_0_161_161_1001_sb_1273_vs_250_sd_34000_sh_996_detect_dome_mirror_vs_250_" #point
+parameter_summary = "1keV_1_10kpp_pitch_0_401_401_1001_sb_1000_vs_300_sd_34000_sh_996_detect_dome_vs_300_" #point
 #parameter_summary = "1keV_1_400kpp_pitch_0_161_161_1001_sb_1000_vs_357_sd_34000_sh_996_detect_dome_mirror_vs_357_" #point
 #parameter_summary ="1keV_1_100kpp_pitch_0_401_401_1001_sb_3000_vs_300_sd_34000_sh_996_detect_dome_mirror_vs_300_" #point
 #parameter_summary = "10keV_1_100kpp_pitch_0_401_401_1001_sb_1000_vs_300_sd_34000_sh_996_detect_dome_mirror_vs_300_" #point
@@ -70,7 +70,7 @@ if HPC_toggle:
     path_to_test_files = "/home/richarddejong/nebula_test_files/"
 elif desktop_toggle:
     # Desktop Path
-    path_to_test_files = "C:/Users/Richard/source/repos/Nebula/nebula_test_files/"
+    path_to_test_files = "C:/Users/Richard/source/repos/Nebula/nebula_dynamic_2021/nebula_test_files/"
 else: 
     # Laptop Path
     path_to_test_files= "C:/Users/richa/Documents/repos/nebula_test_files/"

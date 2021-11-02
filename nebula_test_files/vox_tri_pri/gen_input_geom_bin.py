@@ -110,7 +110,7 @@ if HPC_toggle: #Adjustments for HPC environment
     output_path = "/home/richarddejong/nebula_test_files/vox_tri_pri/"
 elif desktop_toggle:
     #Desktop path
-    output_path = "C:/Users/Richard/source/repos/Nebula/nebula_test_files/vox_tri_pri/"
+    output_path = "C:/Users/Richard/source/repos/Nebula/nebula_dynamic_2021/nebula_test_files/vox_tri_pri/"
 else: 
     # Laptop path
     output_path = "C:/Users/richa/Documents/repos/nebula_test_files/vox_tri_pri/"
